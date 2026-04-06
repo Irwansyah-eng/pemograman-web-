@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <title>Blog Bis</title>
+<script src="counter.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2193b0",
+              secondary: "#6dd5ed"
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- HERO -->
+    <header class="relative h-[60vh] bg-cover bg-center"
+        style="background-image:url('https://images.openai.com/static-rsc-4/l3sbXubXJmUvzNpgcvCeBJM-NMNNcLZqG1B6VO_lEmY-m20aQ_8aTW4OK6nvZ1bNM195gPjmQIeyfivk-9kQ6iv4ZFa5shW0JJTy12vVElSH4G_l2hgoLdElzhpsgSKh5m_xPY8QVKJ-LOX15ar9f3cPAQBemURjPXurDUS1ZoUicjjKwBQD13ClFNQJzbxV?purpose=inline')">
+        
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center">
+            <h1 class="text-5xl font-extrabold">🚌 Dunia Bis</h1>
+            <p>Jelajahi perjalanan nyaman dengan transportasi bus</p>
+            <small>by Irwansyah | 24 B</small>
+        </div>
+    </header>
+
+    <!-- 3 BLOK -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+
+            <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+                <h2 class="text-xl font-bold mb-2">📝 Blog Saya</h2>
+                <p class="text-gray-600 mb-4">Artikel seputar Bis</p>
+                <button onclick="window.location.href='blog.html'" 
+                class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
+                    Baca Blog
+                </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+                <h2 class="text-xl font-bold mb-2">📄 CV Saya</h2>
+                <p class="text-gray-600 mb-4">Tentang diri saya</p>
+                <button onclick="window.location.href='cv.html'" class="bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-500">
+                    Lihat CV
+                </button>
+            </div>
+
+         <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+    <h2 class="text-xl font-bold mb-2">📩 Kontak</h2>
+    <p class="text-gray-600 mb-4">Hubungi saya</p>
+<button onclick="window.location.href='kontak.html'" 
+        class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">
+    Kontak Kami
+</button>
+</div>
+
+        </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section class="text-center mt-10">
+        <h2 class="text-xl font-bold mb-3">🔢 Counter Interaktif</h2>
+        <p id="nomor" class="text-3xl font-bold mb-4">0</p>
+
+        <button id="tambah" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">Tambah</button>
+        <button id="kurang" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600">Kurang</button>
+
+        <!-- 🔥 TEMPAT GIF -->
+        <div id="gifContainer" class="mt-6 flex justify-center"></div>
+    </section>
+
+    <!-- BLOG -->
+    <div class="max-w-4xl mx-auto mt-10 p-4">
+
+        <div class="bg-white p-6 rounded-2xl shadow mb-6">
+            <h2 class="text-blue-500 text-xl font-bold mb-3">Tentang Bus</h2>
+            <p>Bus adalah kendaraan umum yang digunakan untuk mengangkut banyak penumpang dalam satu perjalanan.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow mb-6">
+            <h2 class="text-blue-500 text-xl font-bold mb-3">Jenis-Jenis Bus</h2>
+            <ul class="list-disc ml-5">
+                <li>Bus Kota</li>
+                <li>Bus Pariwisata</li>
+                <li>Bus Antar Kota</li>
+                <li>Bus Sekolah</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow mb-6">
+            <h2 class="text-blue-500 text-xl font-bold mb-3">Video</h2>
+            <iframe class="w-full h-[300px] rounded-xl"
+                src="https://www.youtube.com/embed/ke8v7o27Mto"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow mb-6"> <h2 class="text-blue-500 text-xl font-bold mb-3">Informasi Singkat</h2> <table class="w-full border"> <tr class="bg-blue-500 text-white"> <th class="p-2">Aspek</th> <th class="p-2">Keterangan</th> </tr> <tr> <td class="p-2 border">Fungsi</td> <td class="p-2 border">Transportasi Umum</td> </tr> <tr> <td class="p-2 border">Kapasitas</td> <td class="p-2 border">20 - 60 orang</td> </tr> <tr> <td class="p-2 border">Bahan Bakar</td> <td class="p-2 border">Solar / Listrik</td> </tr> </table> </div>
+
+        <div class="text-center">
+            <button onclick="alert('Terima kasih!')" class="bg-pink-500 text-white px-5 py-2 rounded-full">❤️ Suka</button>
+        </div>
+        <p id="nomor">0</p>
+<button id="tambah">Tambah</button>
+<button id="kurang">Kurang</button>
+<div id="gifContainer"></div>
+
+    </div>
+
+    <footer class="text-center p-4 bg-black text-white mt-10">
+        © 2026 Blog Bus
+    </footer>
+
+<script>
+let number = document.getElementById("nomor");
+let btnTambah = document.getElementById("tambah");
+let btnKurang = document.getElementById("kurang");
+let gifContainer = document.getElementById("gifContainer");
+
+let count = 0;
+
+function tampilkanGif() {
+    let gifHTML = "";
+
+    if (count >= 10) {
+        gifHTML = `<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3BubWN0NzF3bTNvbTk4MXdhOTFteGcycWF5dGY4eWlvZmd1Y2h2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B5BfWWr1UnVrG/giphy.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else if (count >= 5) {
+        gifHTML = `<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3BubWN0NzF3bTNvbTk4MXdhOTFteGcycWF5dGY4eWlvZmd1Y2h2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4Yf1vRJSItODcVGu9V/giphy.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else if (count >= 3) {
+        gifHTML = `<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3BubWN0NzF3bTNvbTk4MXdhOTFteGcycWF5dGY4eWlvZmd1Y2h2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT5LMDwqFuSfkEmqeA/giphy.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else {
+        gifHTML = "";
+    }
+
+    gifContainer.innerHTML = gifHTML;
+}
+
+function tambah(){
+    count++;
+    number.innerText = count;
+    tampilkanGif();
+}
+
+function kurang(){
+    count--;
+    number.innerText = count;
+    tampilkanGif();
+}
+
+btnTambah.addEventListener("click", tambah);
+btnKurang.addEventListener("click", kurang);
+</script>
+
+</body>
+</html>
